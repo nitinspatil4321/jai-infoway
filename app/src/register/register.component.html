@@ -40,7 +40,7 @@
         <label for="confirmpassword">Confirm Password</label>
         <input type="password" formControlName="confirmpassword" class="form-control"
             [ngClass]="{ 'is-invalid': submitted && f.confirmpassword.errors }" />
-        <div *ngIf="confirmpassword" class="invalid-feedback">Password Does Not Match</div>
+        <div *ngIf="f.confirmpassword.errors" class="invalid-feedback">Password Does Not Match</div>
 
     </div>
     <div class="form-group">
